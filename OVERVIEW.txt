@@ -1,0 +1,28 @@
+PROJECT:Automated Cattle Feeder system using IoT
+Project by :Makeswaran K,KPR INSTITUTE OF ENGINEERING AND TECHNOLOGY
+Guided by : Dr.Jaikumar
+
+OBJECTIVE :
+To develop an automated cattle feeder system that ensures timely and precise feeding of livestock
+by automating the distribution of food and water, thereby reducing manual labor and enhancing efficiency 
+in cattle management.
+
+METHODOLOGY
+STEP 1: Identify the need for automation in livestock feeding, particularly in remote or large-scale farms.
+STEP 2: Design the circuit using Arduino, RTC module, relay, servo motor, and DC water pump.
+STEP 3: Write Arduino code to control the timing and operation of the servo motor and water pump.
+STEP 4: Set feeding schedules using the RTC module for accurate time-based activation.
+STEP 5: Interface the relay to control the power supply to the DC pump.
+STEP 6: Test and refine the system to ensure automatic, reliable operation at scheduled intervals.
+
+PROTOTYPE MODEL
+Hardware Used: Arduino, RTC module, relay, servo motor, DC water pump.
+Food Dispensing: At the scheduled time, the servo motor tilts the feed cup to release food.
+Water Filling: The DC pump activates to fill the water container simultaneously.
+Timed Delay: A predefined delay ensures proper intervals between feedings before the cycle restarts.
+Scalability: The model can be extended to accommodate multiple animals or larger farms.
+Future Scope: Integration with IoT for remote monitoring and control of feeding schedules.
+
+
+
+
