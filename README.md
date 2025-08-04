@@ -92,4 +92,3 @@ This project is open-source and free to use for academic, research, or agricultu
 Makeswaran K
 Embedded Systems Developer | Smart Agriculture Enthusiast | IoT Innovator
 
-Let me know if you'd like this formatted into a downloadable `.md` file or as a presentation format!
