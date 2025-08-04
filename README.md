@@ -1,94 +1,103 @@
-Automated Cattle Feeder System using IoT
+🐄 Automated Cattle Feeder System using IoT
 Project By: Makeswaran K, KPR Institute of Engineering and Technology
 Guided By: Dr. Jaikumar
 
-#🐄 Objective
-To build a smart, automated cattle feeding system that delivers food and water at scheduled times using real-time clock control, reducing manual labor and improving efficiency in livestock management.
+🎯 Objective
+To build a smart, automated cattle feeding system that delivers food and water at scheduled times using a real-time clock (RTC), reducing manual labor and improving efficiency in livestock management.
 
-#🔧 Methodology
-Problem Identification
-Addressed the need for automated livestock feeding in remote or large-scale farms where manual supervision is difficult.
+🔧 Methodology
+🧩 Problem Identification
+Recognized the need for automation in livestock feeding, especially in remote or large-scale farming environments where manual effort is impractical.
 
-System Design
-Designed the hardware circuit using:
+🔌 System Design
+Designed the circuit with the following components:
 
-Arduino Uno
+Arduino Uno – Core microcontroller
 
-Real-Time Clock (RTC) Module (DS3231)
+RTC Module (DS3231) – Accurate timekeeping
 
-Servo Motor (for food dispensing)
+Servo Motor – Controls food dispensing
 
-Relay-controlled DC Water Pump
+Relay Module – Controls the water pump
 
-Programming & Logic
+DC Water Pump – Supplies water to livestock
 
-Arduino sketch programmed to schedule and control feeding cycles.
+💻 Programming & Logic
+Arduino sketch schedules and controls the operation.
 
-RTC ensures accurate time-based operation.
+RTC ensures feeding occurs precisely at set times.
 
-Servo tilts food cup at feeding time.
+Servo tilts to release food.
 
-Relay switches on pump to fill water.
+Relay activates the pump to dispense water.
 
-Testing & Validation
+✅ Testing & Validation
+Verified scheduled food and water delivery.
 
-Ensured precise food and water delivery.
+Adjusted timing delays for reliable execution.
 
-Refined delay timings for smooth operation.
-
-System resets daily for continuous feeding cycle.
+Ensured system resets daily to prevent repeated feeding within the same hour.
 
 ⚙️ Hardware Components
 Component	Function
 Arduino Uno	Core microcontroller
-RTC Module (DS3231)	Keeps accurate feeding schedule
-Servo Motor	Dispenses food by tilting feeder cup
-Relay Module	Switches DC water pump on/off
-DC Water Pump	Fills water bowl
-Wires, Breadboard	For circuit connection and power
+RTC Module (DS3231)	Maintains accurate feeding time
+Servo Motor	Tilts the feeder cup to release food
+Relay Module	Switches the DC water pump on/off
+DC Water Pump	Fills water bowl for cattle
+Wires, Breadboard	Circuit connections and power distribution
 
 🧪 Prototype Functionality
-Scheduled Feeding: Servo activates at 7:00 AM (configurable).
+Scheduled Feeding: Servo motor dispenses food at 7:00 AM (configurable).
 
-Timed Watering: Relay activates pump for 5 seconds to fill water.
+Timed Watering: Water pump runs for 5 seconds to fill water bowl.
 
-Auto Reset: System resets daily to ensure feeding doesn't repeat within the hour.
+Auto Reset: System resets hourly to prepare for the next feeding cycle.
 
-Scalable: Easily expandable for more animals or larger installations.
+Scalable: Extendable to feed multiple animals or cover larger farms.
 
-IoT Integration (Future Scope): Remote schedule management and health monitoring through cloud.
+IoT Ready (Future Scope): Supports future integration with cloud platforms for remote control.
 
 💻 Arduino Code Overview
-Key Functionalities:
-Time reading using RTClib.h
+Key Functionalities
+Time tracking with RTClib.h
 
-Servo movement for feed release
+Feed dispensing using Servo.h
 
-Relay control for water pump
+Relay-controlled water pumping
 
-Logic to prevent duplicate feed cycles
+Single execution per scheduled time using a flag (Fed)
+
 ▶️ How to Run
-Connect the components as per the schematic.
+Assemble the circuit as per the schematic.
 
-Upload the code to Arduino using Arduino IDE.
+Upload the code to the Arduino Uno via the Arduino IDE.
 
-Power the system via USB or external adapter.
+Power the system using USB or an external power supply.
 
-At 7:00 AM (or set time), feeding and watering occur automatically.
+Observe the operation:
+
+At the scheduled time (e.g., 7:00 AM), food is dispensed.
+
+Water pump activates for 5 seconds.
+
+System resets the flag after 1 hour for the next cycle.
 
 🚀 Future Enhancements
-Integrate Wi-Fi/Bluetooth (e.g., ESP8266) for IoT control.
+Add Wi-Fi/Bluetooth (ESP8266) for IoT-based control.
 
-Add weight sensors for food monitoring.
+Integrate load cells to measure food quantity.
 
-Enable multiple daily feeding schedules.
+Enable multiple feeding schedules throughout the day.
 
-Mobile alerts/notifications via IoT dashboard (e.g., Blynk/ThingSpeak).
+Implement mobile alerts and dashboards using platforms like Blynk or ThingSpeak.
 
-Solar-powered operation for remote farms.
+Incorporate solar power for sustainable operation in remote areas.
 
 📜 License
 This project is open-source and free to use for academic, research, or agricultural automation purposes.
 
 👨‍💻 Contributor
 Makeswaran K
+IoT Developer | Embedded Systems Enthusiast | Agriculture Innovator
+
