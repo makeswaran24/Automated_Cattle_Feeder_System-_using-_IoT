@@ -2,10 +2,10 @@ Automated Cattle Feeder System using IoT
 Project By: Makeswaran K, KPR Institute of Engineering and Technology
 Guided By: Dr. Jaikumar
 
-🐄 Objective
+#🐄 Objective
 To build a smart, automated cattle feeding system that delivers food and water at scheduled times using real-time clock control, reducing manual labor and improving efficiency in livestock management.
 
-🔧 Methodology
+#🔧 Methodology
 Problem Identification
 Addressed the need for automated livestock feeding in remote or large-scale farms where manual supervision is difficult.
 
